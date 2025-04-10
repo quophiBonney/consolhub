@@ -38,7 +38,7 @@ const Login = () => {
                 <div className="flex flex-col md:flex-row justify-between text-white items-center">
                   <Link to="/auth/recovery">Forgot password?</Link>
                   <p>
-                    Don't have an account yet?
+                    Not yet registered?
                     <Link
                       to="/auth/signup"
                       className="text-gray-400 hover:text-white ml-1"
@@ -97,7 +97,7 @@ const Login = () => {
                 <div className="flex flex-col md:flex-row justify-between text-white items-center">
                   <Link to="/auth/recovery">Forgot password?</Link>
                   <p>
-                    Don't have an account yet?
+                    Not yet registered yet?
                     <Link
                       to="/auth/signup"
                       className="text-gray-400 hover:text-white ml-1"
