@@ -16,6 +16,7 @@ import DashboardHome from "./pages/DashboardHome";
 import DashboardAnalytics from "./pages/DashboardAnalytics";
 import DashboardSettings from "./pages/DashboardSettings";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         {/* Public Routes */}
         <Route path="/" element={<PublicLayout />}>
           <Route index element={<Home />} />
-          <Route path="/auth/login" element={<Login/>}/>
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/signup" element={<Signup />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
         </Route>

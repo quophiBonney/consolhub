@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className="">
       <Tabs>
-        <Tab label="Login As A User " className="">
+        <Tab label="Login As User " className="">
           <div className="mt-5 rounded-xl bg-gray-950/60 md:px-7 lg:px-10 grid grid-cols-1 md:grid-cols-2 p-5 md:p-7 lg:p-10">
             <div>
               <form>
@@ -63,7 +63,7 @@ const Login = () => {
             </div>
           </div>
         </Tab>
-        <Tab label="Login As A Vendor">
+        <Tab label="Login As Vendor">
           <div className="mt-5 rounded-xl bg-gray-950/60 px-5 md:px-7 lg:px-10 md:gap-16 grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 lg:p-16">
             <div className="hidden md:block">
               <img src={account} alt="Account" className="w-full h-80" />

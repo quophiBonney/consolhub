@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const location = useLocation()
-    if(location.pathname === "/auth/login") return null; // Hide navbar on login page
+    if(location.pathname.includes("/auth")) return null; // Hide navbar on login page
   return (
     <nav className="bg-blue-600 text-white p-4">
       <div className="container mx-auto flex justify-between">
