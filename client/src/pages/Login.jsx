@@ -69,6 +69,10 @@ const Login = () => {
               <img src={account} alt="Account" className="w-full h-80" />
             </div>
             <div>
+              <div className="text-white mb-5 text-center">
+                <h1 className="text-2xl  font-bold">Welcome Back 👋</h1>
+                <p>Fill in your details to log into your account</p>
+              </div>
               <form>
                 <div>
                   <input
@@ -105,15 +109,6 @@ const Login = () => {
                       Signup
                     </Link>
                   </p>
-                </div>
-                <div className="w-full">
-                  <h4 className="text-center text-white">Or</h4>
-                  <Link
-                    to=""
-                    className="mt-5 flex justify-center gap-3 hover:cursor-pointer w-full mb-4 border-2 border-white radio p-3 rounded-lg text-white"
-                  >
-                    <FcGoogle size={25} /> Login With Google
-                  </Link>
                 </div>
               </form>
             </div>

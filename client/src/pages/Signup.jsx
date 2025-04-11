@@ -4,7 +4,7 @@ import account from "../assets/account.svg";
 import { Link } from "react-router-dom";
 const Signup = () => {
   return (
-    <div className="h-lvh">
+    <div className="h-full">
       <Tabs>
         <Tab label="Signup As User " className="">
           <div className="mt-5 rounded-xl bg-gray-950/60 px-5 md:px-7 lg:px-10 grid grid-cols-1 md:grid-cols-2 p-5 md:p-7 lg:p-10">
@@ -54,25 +54,35 @@ const Signup = () => {
                     required
                   />
                 </div>
-                <div>
-                  <input
-                    type="submit"
-                    value="Login"
-                    className="hover:cursor-pointer w-full mb-4 border-0 radio p-3 bg-rose-500 rounded-lg text-white"
-                    required
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5">
+                  <div>
+                    <input
+                      type="submit"
+                      value="Signup"
+                      className="hover:cursor-pointer w-full mb-4 border-0 radio p-3 bg-rose-500 rounded-lg text-white"
+                      required
+                    />
+                  </div>
+                  <div className="text-center lg:text-end text-white">
+                    <p>
+                      Already registered?{" "}
+                      <Link to="/auth/login" className="ml-1">
+                        Login
+                      </Link>
+                    </p>
+                  </div>
                 </div>
               </form>
             </div>
             <div className="hidden md:block">
-              <img src={account} alt="Account" className="w-full h-72" />
+              <img src={account} alt="Account" className="w-full h-96" />
             </div>
           </div>
         </Tab>
         <Tab label="Signup As Vendor">
           <div className="mt-5 rounded-xl bg-gray-950/60 px-5 md:px-7 lg:px-10 p-5 md:p-7 lg:p-16 w-full flex justify-center items-center">
             <form className="grid grid-cols-1 ">
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div>
                   <label htmlFor="name" className="text-white">
                     Store Name
