@@ -6,21 +6,15 @@ const Navbar = () => {
     const location = useLocation()
     if(location.pathname.includes("/auth")) return null; // Hide navbar on login page
   return (
-    <nav className="bg-blue-600 text-white p-4">
-      <div className="container mx-auto flex justify-between">
-        <h1 className="font-bold">My MERN App</h1>
+    <nav className="bg-rose-500 text-white p-3 fixed top-0 w-full z-10">
+      <div className="flex justify-between p-2">
+        <h1 className="font-bold text-2xl uppercase">ConsolHub</h1>
         <div>
-          <Link className="mr-4 hover:underline" to="/">
-            Home
-          </Link>
-          <Link className="mr-4 hover:underline" to="/about">
-            About
-          </Link>
-          <Link className="mr-4 hover:underline" to="/products">
-            Products
-          </Link>
-          <Link className="hover:underline" to="/admin">
-            Admin
+          <Link
+            className="mr-2 bg-white rounded-lg p-2 md:p-3 shadow-md text-rose-500"
+            to="/"
+          >
+            Upload Product
           </Link>
         </div>
       </div>

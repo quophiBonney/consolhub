@@ -1,12 +1,12 @@
 // src/pages/Home.jsx
 import React from "react";
+import HomeHero from "../components/HomeHero";
 
 const Home = () => {
   return (
-    <div>
-      <h2 className="text-2xl font-bold">Home Page</h2>
-      <p>Welcome to the Home Page.</p>
-    </div>
+    <>
+    <HomeHero/>
+    </>
   );
 };
 

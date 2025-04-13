@@ -9,7 +9,7 @@ const Tabs = ({ children }) => {
   };
 
   return (
-    <div className="bg-rose-500 h-full md:h-screen w-full overflow-hidden flex flex-col justify-center items-center">
+    <div className="w-full overflow-hidden flex flex-col justify-center items-center">
       <div className="flex w-full lg:w-[35%] px-5 md:px-7 lg:px-10 pt-5">
         {children.map((child) => (
           <button

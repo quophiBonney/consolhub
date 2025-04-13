@@ -17,6 +17,8 @@ import DashboardAnalytics from "./pages/DashboardAnalytics";
 import DashboardSettings from "./pages/DashboardSettings";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import OTPVerification from "./pages/OTPVerification";
+import VendorOTP from "./pages/VendorOTP";  
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/signup" element={<Signup />} />
+          <Route path="/auth/otp-verification" element={<OTPVerification />} />
+          <Route path="/auth/vendor-otp-verification" element={<VendorOTP />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
         </Route>
